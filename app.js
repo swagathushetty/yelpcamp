@@ -15,7 +15,7 @@ var commentRoutes=require("./routes/comments")
 var campgroundRoutes=require("./routes/campgrounds")
 var indexRoutes=require('./routes/index')
 
-mongoose.connect("mongodb+srv://swagath:<password>@cluster0-pqkas.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true,useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://swagath:1q2w3e4r@cluster0-pqkas.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true,useUnifiedTopology: true});
 app.use(bodyParser.urlencoded({extended:true})); //dont worry simply memorise
 app.set("view engine","ejs");
 app.use(express.static(__dirname+"/public")) 
